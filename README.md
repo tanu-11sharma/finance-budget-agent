@@ -1,7 +1,7 @@
 # Finance Budget Agent (Demo)
 
 A rule-based personal-finance agent that categorizes transactions and
-compares actual spend against a monthly budget, category by category â
+compares actual spend against a monthly budget, category by category -
 built on entirely synthetic sample data.
 
 **This is a demo/reference project, not a real financial tool.** It does
@@ -17,7 +17,7 @@ money; and nothing it outputs is financial advice.
 3. Rolls categorized spend up against a sample monthly budget per category,
    flagging which categories are over budget and by how much.
 
-Every category assignment traces back to a specific keyword rule â there's
+Every category assignment traces back to a specific keyword rule - there's
 no black-box model and no external API call involved in the core logic.
 
 ## Why this is relevant
@@ -62,7 +62,7 @@ pytest -q
 ```
 
 All 14 tests run offline against the in-memory sample data and the
-FastAPI `TestClient` â no network access required.
+FastAPI `TestClient` - no network access required.
 
 ## Example usage
 
@@ -72,7 +72,7 @@ Get the monthly budget-vs-actual summary for the bundled sample transactions:
 curl -s http://127.0.0.1:8000/summary
 ```
 
-Example (real, verified) output â total income/spend for the bundled sample
+Example (real, verified) output - total income/spend for the bundled sample
 month, with the first few categories:
 
 ```json
@@ -108,7 +108,7 @@ curl -s -X POST http://127.0.0.1:8000/summary \
 ## Disclaimer
 
 All transaction and budget data in this repository is synthetic and
-fabricated for demonstration purposes â it does not represent any real
+fabricated for demonstration purposes - it does not represent any real
 person's finances. This project is a non-production demo, not a bank
 integration, and not financial advice.
 
